@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Filter YouTube search by view count and exact length</title>
+<meta name="description" content="YouTube's Filters menu has three length buckets and no view count filter. How to filter search results by exact length, view count and what you haven't watched.">
+<link rel="canonical" href="https://gottostartsomewhere.github.io/needle/youtube-search-filters/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Needle for YouTube">
+<meta property="og:title" content="Filter YouTube search by view count and exact length">
+<meta property="og:description" content="YouTube's Filters menu has three length buckets and no view count filter. How to filter search results by exact length, view count and what you haven't watched.">
+<meta property="og:url" content="https://gottostartsomewhere.github.io/needle/youtube-search-filters/">
+<meta property="og:image" content="https://gottostartsomewhere.github.io/needle/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="../needle.svg" type="image/svg+xml">
+<link rel="icon" href="../icon128.png" sizes="128x128" type="image/png">
+<link rel="apple-touch-icon" href="../icon128.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="../style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"How to filter YouTube search by views and exact length","description":"YouTube's Filters menu has three length buckets and no view count filter. How to filter search results by exact length, view count and what you haven't watched.","dateModified":"2026-09-30","datePublished":"2026-09-30","image":"https://gottostartsomewhere.github.io/needle/img/og.jpg","mainEntityOfPage":"https://gottostartsomewhere.github.io/needle/youtube-search-filters/","publisher":{"@type":"Organization","name":"Needle for YouTube","logo":{"@type":"ImageObject","url":"https://gottostartsomewhere.github.io/needle/icon128.png"}}},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Did YouTube remove sort by view count?","acceptedAnswer":{"@type":"Answer","text":"Yes. The old view count sort became Popularity, which weighs things like watch time as well as views. In Needle, >100k filters by the actual view count, and sort:views sorts by it."}},{"@type":"Question","name":"Does YouTube see my filters?","acceptedAnswer":{"@type":"Answer","text":"Only the ones it has itself, like upload date. Needle takes the rest out of the query before YouTube sees it, so <12m never turns into a search for “<12m”."}},{"@type":"Question","name":"Does it work on my phone?","acceptedAnswer":{"@type":"Answer","text":"No. Needle is for YouTube in a desktop browser: Chrome, or another browser that installs extensions from the Chrome Web Store."}},{"@type":"Question","name":"Is it free?","acceptedAnswer":{"@type":"Answer","text":"Yes. No account, no trial, no paid tier."}}]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Needle","item":"https://gottostartsomewhere.github.io/needle/"},{"@type":"ListItem","position":2,"name":"Filter search by views and exact length","item":"https://gottostartsomewhere.github.io/needle/youtube-search-filters/"}]}]}</script>
+</head>
+<body>
+<header class="top">
+  <div class="top-in">
+    <a class="logo" href="../" aria-label="Needle for YouTube, home"><svg class="mark" viewBox="0 0 128 128" width="28" height="28" aria-hidden="true"><g transform="translate(64 64) scale(0.93) translate(-78 -66.4)"><mask id="m-top"><rect width="128" height="128" fill="#000"/><path d="M45 30 L45 98 L101 64 Z" fill="#fff" stroke="#fff" stroke-width="13" stroke-linejoin="round"/><path d="M40 118 L110.9 33.2 Q119 30.4 117.1 38.8 Z" fill="#000" stroke="#000" stroke-width="9" stroke-linejoin="round"/></mask><rect width="128" height="128" fill="currentColor" mask="url(#m-top)"/><path d="M40 118 L110.9 33.2 Q119 30.4 117.1 38.8 Z" fill="currentColor"/><path d="M108.2 42.5 C104 22 86 12 77 20 C70 26 78 34.5 86 27.5" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round"/></g></svg><span class="word">Needle</span><span class="sep" aria-hidden="true"></span><span class="logo-sub">For YouTube</span></a>
+    <nav>
+      <a class="navlink" href="../#guides">Guides</a>
+      <a class="btn-line btn-sm" href="https://chromewebstore.google.com/detail/needle-for-youtube-channe/magofcbhfhpfabphcldhodhgehhclokc?utm_source=needle-site&utm_medium=web&utm_campaign=youtube-search-filters">Add to Chrome</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="band band-article">
+    <article class="article">
+      <p class="eyebrow"><span>Guide 04</span><i>·</i>Search filters</p>
+      <h1>How to filter YouTube search by views and exact length<span class="red">.</span></h1>
+      <p class="mono small">Updated 30 September 2026</p>
+      <section class="answer" aria-label="Short answer">
+        <p class="eyebrow"><span>Short answer</span></p>
+        <p>YouTube's Filters button offers three length buckets (under 3 minutes, 3 to 20, over 20), an upload date, and a Popularity sort. There's no view count filter and no exact length. With <a href="https://chromewebstore.google.com/detail/needle-for-youtube-channe/magofcbhfhpfabphcldhodhgehhclokc?utm_source=needle-site&utm_medium=web&utm_campaign=youtube-search-filters">Needle</a>, a free Chrome extension, you type them into the search bar instead: <code class="op">&lt;12m</code>, <code class="op">&gt;100k</code>, <code class="op">unwatched</code>.</p>
+      </section>
+      
+<p class="eyebrow"><span>01</span><i>·</i>On YouTube</p>
+<h2 id="youtube">What YouTube's Filters menu can do</h2>
+<p>Search for something, then click <em>Filters</em> above the results. You get:</p>
+<ul class="list">
+  <li><strong>Upload date:</strong> today, this week, this month, this year.</li>
+  <li><strong>Type:</strong> videos, channels, playlists and a few more.</li>
+  <li><strong>Duration:</strong> under 3 minutes, 3 to 20 minutes, over 20 minutes.</li>
+  <li><strong>Features:</strong> live, 4K, HD, subtitles, Creative Commons, 360, VR180, 3D, HDR.</li>
+  <li><strong>Prioritize:</strong> relevance or popularity.</li>
+</ul>
+<p>YouTube has also started showing Watched and Unwatched chips on some results pages.</p>
+
+<p class="eyebrow"><span>02</span><i>·</i>The gap</p>
+<h2 id="missing">What it can't do</h2>
+<ul class="list">
+  <li><strong>View counts.</strong> Popularity isn't view count, and there's no way to say "only videos over 100K views".</li>
+  <li><strong>Exact lengths.</strong> Three buckets, that's it. A 10 minute limit isn't possible.</li>
+  <li><strong>Leaving a channel out.</strong> If one creator floods every search, you can't mute them.</li>
+</ul>
+
+<p class="eyebrow"><span>03</span><i>·</i>With Needle</p>
+<h2 id="needle">Type your filters with Needle</h2>
+<p>Needle lets you write filters straight into YouTube's search bar. Press Enter and anything YouTube can do itself, like <code class="op">date:week</code> or <code class="op">is:4k</code>, goes to YouTube as its own filter. The rest, like exact lengths and view counts, is applied to the results in Needle's panel. When a strict filter leaves too few, <em>Load more</em> keeps reading further down YouTube's results.</p>
+<figure><img src="../img/filters.webp" width="1406" height="620" alt="Needle's panel on a YouTube search for C++, filtered to over 20 minutes and over 100K views, 130 of 207 results" loading="lazy" decoding="async"><figcaption>C++ tutorials over 20 minutes with more than 100K views: 130 of the first 207 results.</figcaption></figure>
+
+<h3>Every filter</h3>
+<table class="ops"><tbody><tr><td><code class="op">&lt;20m</code></td><td>Shorter than 20 minutes (also >45m, <1h, >90s)</td></tr><tr><td><code class="op">&gt;100k</code></td><td>More than 100K views (also <5k, >1m views)</td></tr><tr><td><code class="op">unwatched</code></td><td>Never started (is:started for half watched, is:watched for done)</td></tr><tr><td><code class="op">is:fresh</code></td><td>Nothing you were shown in an earlier search</td></tr><tr><td><code class="op">date:week</code></td><td>Uploaded this week (also today, month, year)</td></tr><tr><td><code class="op">after:2023</code></td><td>Uploaded after 2023 (before: works too, with a year, month or day)</td></tr><tr><td><code class="op">@name</code></td><td>Only from that channel</td></tr><tr><td><code class="op">-@name</code></td><td>Never from that channel</td></tr><tr><td><code class="op">-word</code></td><td>Leave out anything mentioning it</td></tr><tr><td><code class="op">sort:views</code></td><td>Most viewed first (also newest, oldest, longest, shortest)</td></tr><tr><td><code class="op">lang:en</code></td><td>Titles in English</td></tr><tr><td><code class="op">is:4k</code></td><td>YouTube's own feature filters: also is:live, is:hd, has:subtitles, is:creative-commons</td></tr></tbody></table>
+
+<h3>Try these</h3>
+<ul class="list">
+  <li><code class="op">python tutorial &lt;30m &gt;100k</code> proper tutorials that aren't three hours long.</li>
+  <li><code class="op">lofi is:fresh</code> only results you haven't already scrolled past.</li>
+  <li><code class="op">phone review -@mkbhd</code> for when one channel fills the whole page.</li>
+  <li><code class="op">recipe date:month unwatched</code> new this month, and not something you've seen.</li>
+</ul>
+      <p class="eyebrow"><span>04</span><i>·</i>Questions</p>
+      <h2 id="faq">Questions<span class="red">?</span></h2>
+      <div class="faq"><div class="qa"><h3>Did YouTube remove sort by view count?</h3><p>Yes. The old view count sort became Popularity, which weighs things like watch time as well as views. In Needle, &gt;100k filters by the actual view count, and sort:views sorts by it.</p></div>
+<div class="qa"><h3>Does YouTube see my filters?</h3><p>Only the ones it has itself, like upload date. Needle takes the rest out of the query before YouTube sees it, so &lt;12m never turns into a search for “&lt;12m”.</p></div>
+<div class="qa"><h3>Does it work on my phone?</h3><p>No. Needle is for YouTube in a desktop browser: Chrome, or another browser that installs extensions from the Chrome Web Store.</p></div>
+<div class="qa"><h3>Is it free?</h3><p>Yes. No account, no trial, no paid tier.</p></div></div>
+    </article>
+  </section>
+  
+<section class="band band-close">
+  <div class="wrap center">
+    <h2 class="closer">Start searching<span class="red">.</span></h2>
+    <a class="btn" href="https://chromewebstore.google.com/detail/needle-for-youtube-channe/magofcbhfhpfabphcldhodhgehhclokc?utm_source=needle-site&utm_medium=web&utm_campaign=youtube-search-filters">Add to Chrome <svg class="arr" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    <p class="mono small">Free. No account. Nothing leaves your browser.</p>
+  </div>
+</section>
+  <section class="band band-alt">
+    <div class="wrap">
+      <p class="eyebrow">More guides</p>
+      <div class="cards cards-3">
+        <a class="card card-link" href="../search-watch-history/"><p class="eyebrow eyebrow-grey"><span>Watch history</span></p><h3>Search your watch history</h3><p class="mono">By channel, length or the week you watched it, not just the title.</p><span class="go">Read <svg class="arr" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+        <a class="card card-link" href="../search-watch-later/"><p class="eyebrow eyebrow-grey"><span>Watch Later</span></p><h3>Search your Watch Later</h3><p class="mono">YouTube has no search box for it. The workaround, and the proper fix.</p><span class="go">Read <svg class="arr" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+        <a class="card card-link" href="../search-youtube-channel/"><p class="eyebrow eyebrow-grey"><span>Channels</span></p><h3>Search every video on a channel</h3><p class="mono">Filter a whole channel by length, views and what you haven't finished.</p><span class="go">Read <svg class="arr" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="foot">
+  <div class="foot-in">
+    <a class="logo" href="../" aria-label="Needle for YouTube, home"><svg class="mark" viewBox="0 0 128 128" width="26" height="26" aria-hidden="true"><g transform="translate(64 64) scale(0.93) translate(-78 -66.4)"><mask id="m-foot"><rect width="128" height="128" fill="#000"/><path d="M45 30 L45 98 L101 64 Z" fill="#fff" stroke="#fff" stroke-width="13" stroke-linejoin="round"/><path d="M40 118 L110.9 33.2 Q119 30.4 117.1 38.8 Z" fill="#000" stroke="#000" stroke-width="9" stroke-linejoin="round"/></mask><rect width="128" height="128" fill="currentColor" mask="url(#m-foot)"/><path d="M40 118 L110.9 33.2 Q119 30.4 117.1 38.8 Z" fill="currentColor"/><path d="M108.2 42.5 C104 22 86 12 77 20 C70 26 78 34.5 86 27.5" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round"/></g></svg><span class="word">Needle</span></a>
+    <nav>
+      <a href="../#guides">Guides</a>
+      <a href="https://github.com/gottostartsomewhere/yt-channel-search/blob/main/PRIVACY.md">Privacy</a>
+      <a href="https://github.com/gottostartsomewhere/yt-channel-search">Source</a>
+      <a href="https://chromewebstore.google.com/detail/needle-for-youtube-channe/magofcbhfhpfabphcldhodhgehhclokc?utm_source=needle-site&utm_medium=web&utm_campaign=youtube-search-filters">Chrome Web Store</a>
+    </nav>
+  </div>
+  <p class="foot-note">Not affiliated with YouTube or Google.</p>
+</footer>
+</body>
+</html>
