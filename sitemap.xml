@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://gottostartsomewhere.github.io/needle/</loc><lastmod>2026-11-09</lastmod></url>
+  <url><loc>https://gottostartsomewhere.github.io/needle/</loc><lastmod>2026-11-10</lastmod></url>
   <url><loc>https://gottostartsomewhere.github.io/needle/search-watch-history/</loc><lastmod>2026-11-02</lastmod></url>
   <url><loc>https://gottostartsomewhere.github.io/needle/sort-youtube-search-by-upload-date/</loc><lastmod>2026-11-05</lastmod></url>
   <url><loc>https://gottostartsomewhere.github.io/needle/search-watch-later/</loc><lastmod>2026-11-02</lastmod></url>
@@ -14,4 +14,6 @@
   <url><loc>https://gottostartsomewhere.github.io/needle/search-youtube-channel/</loc><lastmod>2026-11-02</lastmod></url>
   <url><loc>https://gottostartsomewhere.github.io/needle/find-longest-video-youtube-channel/</loc><lastmod>2026-11-02</lastmod></url>
   <url><loc>https://gottostartsomewhere.github.io/needle/youtube-search-filters/</loc><lastmod>2026-09-30</lastmod></url>
+  <url><loc>https://gottostartsomewhere.github.io/needle/exclude-channel-youtube-search/</loc><lastmod>2026-11-10</lastmod></url>
+  <url><loc>https://gottostartsomewhere.github.io/needle/search-liked-videos-youtube/</loc><lastmod>2026-11-10</lastmod></url>
 </urlset>
