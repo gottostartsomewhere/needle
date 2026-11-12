@@ -11,6 +11,7 @@ a Chrome extension that searches the parts of YouTube that have no search box.
 - [How to search your YouTube Watch Later list](https://gottostartsomewhere.github.io/needle/search-watch-later/)
 - [Block a YouTube channel everywhere, search included](https://gottostartsomewhere.github.io/needle/block-youtube-channel/)
 - [How to hide watched videos on YouTube](https://gottostartsomewhere.github.io/needle/hide-watched-videos-youtube/)
+- [How to hide Shorts on YouTube](https://gottostartsomewhere.github.io/needle/hide-shorts-youtube/)
 - [How to remove watched videos from your Watch Later](https://gottostartsomewhere.github.io/needle/remove-watched-watch-later/)
 - [How to search a YouTube playlist](https://gottostartsomewhere.github.io/needle/search-youtube-playlist/)
 - [YouTube playlist length: total time and how much is left](https://gottostartsomewhere.github.io/needle/youtube-playlist-length/)
