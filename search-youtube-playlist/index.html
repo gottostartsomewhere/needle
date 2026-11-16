@@ -23,7 +23,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap">
 <link rel="stylesheet" href="../style.css">
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"How to search in a YouTube playlist","description":"YouTube playlists have no search box. Find any video in your own or anyone's playlist in seconds, then filter it by length, views and channel. Free, no sign-up.","dateModified":"2026-11-14","datePublished":"2026-09-30","image":"https://gottostartsomewhere.github.io/needle/img/og.jpg","mainEntityOfPage":"https://gottostartsomewhere.github.io/needle/search-youtube-playlist/","publisher":{"@type":"Organization","name":"Needle for YouTube","logo":{"@type":"ImageObject","url":"https://gottostartsomewhere.github.io/needle/icon128.png"}}},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does it work on someone else's playlist?","acceptedAnswer":{"@type":"Answer","text":"Yes, any playlist you can open: public ones, and unlisted ones you have the link to."}},{"@type":"Question","name":"What about private playlists?","acceptedAnswer":{"@type":"Answer","text":"Only your own, while you're signed in, the same as YouTube."}},{"@type":"Question","name":"How long is too long?","acceptedAnswer":{"@type":"Answer","text":"Needle reads up to the Video limit in Needle's settings, 1,800 by default, 100 at a time. A long playlist takes a few seconds, then filtering is instant."}},{"@type":"Question","name":"Is it free?","acceptedAnswer":{"@type":"Answer","text":"Yes. No account, no trial, no paid tier."}}]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Needle","item":"https://gottostartsomewhere.github.io/needle/"},{"@type":"ListItem","position":2,"name":"Search inside any playlist","item":"https://gottostartsomewhere.github.io/needle/search-youtube-playlist/"}]}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"How to search in a YouTube playlist","description":"YouTube playlists have no search box. Find any video in your own or anyone's playlist in seconds, then filter it by length, views and channel. Free, no sign-up.","dateModified":"2026-11-16","datePublished":"2026-09-30","image":"https://gottostartsomewhere.github.io/needle/img/og.jpg","mainEntityOfPage":"https://gottostartsomewhere.github.io/needle/search-youtube-playlist/","publisher":{"@type":"Organization","name":"Needle for YouTube","logo":{"@type":"ImageObject","url":"https://gottostartsomewhere.github.io/needle/icon128.png"}}},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does it work on someone else's playlist?","acceptedAnswer":{"@type":"Answer","text":"Yes, any playlist you can open: public ones, and unlisted ones you have the link to."}},{"@type":"Question","name":"What about private playlists?","acceptedAnswer":{"@type":"Answer","text":"Only your own, while you're signed in, the same as YouTube."}},{"@type":"Question","name":"How long is too long?","acceptedAnswer":{"@type":"Answer","text":"Needle reads up to the Video limit in Needle's settings, 1,800 by default, 100 at a time. A long playlist takes a few seconds, then filtering is instant."}},{"@type":"Question","name":"Does Ctrl+F search a whole playlist?","acceptedAnswer":{"@type":"Answer","text":"Only the part that has loaded. A playlist page opens with 100 videos and adds more as you scroll, so anything further down isn't found until you've scrolled to it."}},{"@type":"Question","name":"Can I search a playlist in the YouTube app?","acceptedAnswer":{"@type":"Answer","text":"No. The app has no search inside a playlist, and Needle is for YouTube in a desktop browser."}},{"@type":"Question","name":"Why does Needle show fewer videos than the playlist says?","acceptedAnswer":{"@type":"Answer","text":"YouTube's count includes videos that were deleted, made private or aren't available where you are, and it leaves those out of the list. Needle counts the ones that are there. The 499-video playlist in this guide listed 417."}},{"@type":"Question","name":"Is it free?","acceptedAnswer":{"@type":"Answer","text":"Yes. No account, no trial, no paid tier."}}]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Needle","item":"https://gottostartsomewhere.github.io/needle/"},{"@type":"ListItem","position":2,"name":"Search inside any playlist","item":"https://gottostartsomewhere.github.io/needle/search-youtube-playlist/"}]}]}</script>
 </head>
 <body>
 <header class="top">
@@ -41,7 +41,7 @@
     <article class="article">
       <p class="eyebrow"><span>Guide 09</span><i>·</i>Playlists</p>
       <h1>How to search in a YouTube playlist<span class="red">.</span></h1>
-      <p class="mono small">Updated 14 November 2026</p>
+      <p class="mono small">Updated 16 November 2026</p>
       <section class="answer" aria-label="Short answer">
         <p class="eyebrow"><span>Short answer</span></p>
         <p>YouTube has no search box inside a playlist, and Ctrl+F only sees the videos loaded so far. <a href="https://chromewebstore.google.com/detail/needle-for-youtube-channe/magofcbhfhpfabphcldhodhgehhclokc?utm_source=needle-site&utm_medium=web&utm_campaign=search-youtube-playlist">Needle</a> reads the whole playlist, yours or anyone's public one, and lets you search and filter it by title, channel, length and views. To search every playlist you've saved at once, type <code class="op">in:playlists</code> into YouTube's search bar.</p>
@@ -49,9 +49,23 @@
       
 <p class="eyebrow"><span>01</span><i>·</i>The problem</p>
 <h2 id="why">Why you can't search a playlist on YouTube</h2>
-<p>A playlist page shows the first 100 videos and loads the rest in batches as you scroll. There's a sort menu on some, but no search box and no filters, so finding one video in a 600-video course means scrolling it all in and trying Ctrl+F.</p>
+<p>A playlist page has a title, a <em>Play all</em> button and a list. There's no search box on it and no filters, and the search bar at the top searches all of YouTube, not the playlist you're on.</p>
+<p>The page doesn't hold the whole list either. Checked in November 2026 on a public playlist of 499 videos: 100 were on the page when it opened, and the rest only arrive in batches as you scroll. Playlists you made get a sort menu. Other people's don't get that much.</p>
 
-<p class="eyebrow"><span>02</span><i>·</i>With Needle</p>
+<p class="eyebrow"><span>02</span><i>·</i>The workaround</p>
+<h2 id="ctrl-f">The workaround: scroll, then Ctrl+F</h2>
+<ol class="steps">
+  <li>Open the playlist.</li>
+  <li>Scroll to the bottom and keep going until no more videos load.</li>
+  <li>Press <kbd>Ctrl</kbd>+<kbd>F</kbd> (<kbd>Cmd</kbd>+<kbd>F</kbd> on a Mac) and type a word from the title or the channel name.</li>
+</ol>
+<p>It works on words and nothing else, and only on what has loaded. A 600-video course is six rounds of scrolling before its last lesson can be found, and you do it again on every visit.</p>
+
+<p class="eyebrow"><span>03</span><i>·</i>On your phone</p>
+<h2 id="phone">On your phone</h2>
+<p>The YouTube app has no search inside a playlist either, and no Ctrl+F to fall back on. If you remember who made the video, going to that channel and looking there is usually quicker.</p>
+
+<p class="eyebrow"><span>04</span><i>·</i>With Needle</p>
 <h2 id="needle">Search it with Needle</h2>
 <ol class="steps">
   <li>Open the playlist.</li>
@@ -59,16 +73,31 @@
   <li>Needle reads every video in it, not just the ones on screen.</li>
   <li>Type to search titles and channels, or filter by Length, Views, Date, Watched and Channel.</li>
 </ol>
+<figure><img src="../img/playlist-search.webp" width="812" height="470" alt="Needle's panel on a public YouTube playlist, searching for drake and showing 9 of 417 videos" loading="lazy" decoding="async"><figcaption>One word, nine songs out of 417. None has “drake” in its title: the search reads channel names too.</figcaption></figure>
 <p>The <strong>Channel</strong> picker lists everyone in the playlist with how many videos each has, which on a big mixed playlist is often the fastest way in.</p>
 
-<p class="eyebrow"><span>03</span><i>·</i>All at once</p>
+<p class="eyebrow"><span>05</span><i>·</i>Filters</p>
+<h2 id="filters">Narrow it down</h2>
+<p>A word is often not what you remember. Type any of these into the same box, on their own or after a word:</p>
+<table class="ops"><tbody><tr><td><code class="op">&lt;10m</code></td><td>Under 10 minutes</td></tr><tr><td><code class="op">&gt;1h</code></td><td>Over an hour, for the full lectures</td></tr><tr><td><code class="op">unwatched</code></td><td>Only what you haven't started</td></tr><tr><td><code class="op">@name</code></td><td>Only that channel's videos</td></tr><tr><td><code class="op">-word</code></td><td>Leave out anything with that word in the title</td></tr></tbody></table>
+<p>The sort menu then puts what's left in order, <a href="../sort-youtube-playlist-by-length/">shortest or longest first</a> included, and the line above the list adds up <a href="../youtube-playlist-length/">how long it all runs</a>.</p>
+
+<p class="eyebrow"><span>06</span><i>·</i>All at once</p>
 <h2 id="all">Every playlist you've saved, at once</h2>
 <p>Type <code class="op">in:playlists</code> and a word into YouTube's search bar. The first time, Needle reads each playlist in your library once, then keeps them for twelve hours, so the search after that is instant. <code class="op">in:playlists rust &lt;20m</code> is every short Rust video across all of them.</p>
-      <p class="eyebrow"><span>04</span><i>·</i>Questions</p>
+
+<p class="eyebrow"><span>07</span><i>·</i>Watch Later</p>
+<h2 id="watch-later">Watch Later and Liked videos</h2>
+<p>Both are playlists underneath, and the same panel opens on them. They have their own quirks, like stopping at the first 100 until you ask for the rest: <a href="../search-watch-later/">searching Watch Later</a> and <a href="../search-liked-videos-youtube/">searching your Liked videos</a> cover those.</p>
+<p>Found what you were after? <strong>Export</strong> copies the links or saves the list as a spreadsheet. <a href="../export-youtube-playlist/">How to export a playlist</a>.</p>
+      <p class="eyebrow"><span>08</span><i>·</i>Questions</p>
       <h2 id="faq">Questions<span class="red">?</span></h2>
       <div class="faq"><div class="qa"><h3>Does it work on someone else's playlist?</h3><p>Yes, any playlist you can open: public ones, and unlisted ones you have the link to.</p></div>
 <div class="qa"><h3>What about private playlists?</h3><p>Only your own, while you're signed in, the same as YouTube.</p></div>
 <div class="qa"><h3>How long is too long?</h3><p>Needle reads up to the Video limit in Needle's settings, 1,800 by default, 100 at a time. A long playlist takes a few seconds, then filtering is instant.</p></div>
+<div class="qa"><h3>Does Ctrl+F search a whole playlist?</h3><p>Only the part that has loaded. A playlist page opens with 100 videos and adds more as you scroll, so anything further down isn't found until you've scrolled to it.</p></div>
+<div class="qa"><h3>Can I search a playlist in the YouTube app?</h3><p>No. The app has no search inside a playlist, and Needle is for YouTube in a desktop browser.</p></div>
+<div class="qa"><h3>Why does Needle show fewer videos than the playlist says?</h3><p>YouTube's count includes videos that were deleted, made private or aren't available where you are, and it leaves those out of the list. Needle counts the ones that are there. The 499-video playlist in this guide listed 417.</p></div>
 <div class="qa"><h3>Is it free?</h3><p>Yes. No account, no trial, no paid tier.</p></div></div>
     </article>
   </section>
@@ -95,6 +124,7 @@
         <a class="card card-link" href="../youtube-playlist-length/"><p class="eyebrow eyebrow-grey"><span>Playlists</span></p><h3>How long is this playlist?</h3><p class="mono">Its total length, and how much of it you have left.</p><span class="go">Read <svg class="arr" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
         <a class="card card-link" href="../sort-youtube-playlist-by-length/"><p class="eyebrow eyebrow-grey"><span>Playlists</span></p><h3>Sort a playlist by length</h3><p class="mono">Shortest or longest first, Watch Later included. YouTube can't.</p><span class="go">Read <svg class="arr" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
         <a class="card card-link" href="../export-youtube-playlist/"><p class="eyebrow eyebrow-grey"><span>Playlists</span></p><h3>Export a playlist</h3><p class="mono">Every link, a CSV, or straight into NotebookLM. Any playlist, Watch Later too.</p><span class="go">Read <svg class="arr" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+        <a class="card card-link" href="../youtube-channel-to-notebooklm/"><p class="eyebrow eyebrow-grey"><span>Channels</span></p><h3>Send a channel to Gemini Notebook</h3><p class="mono">A notebook holds 50 videos. Pick the right 50 from a channel of hundreds.</p><span class="go">Read <svg class="arr" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
         <a class="card card-link" href="../search-youtube-channel/"><p class="eyebrow eyebrow-grey"><span>Channels</span></p><h3>Search every video on a channel</h3><p class="mono">Filter a whole channel by length, views and what you haven't finished.</p><span class="go">Read <svg class="arr" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
         <a class="card card-link" href="../find-longest-video-youtube-channel/"><p class="eyebrow eyebrow-grey"><span>Channels</span></p><h3>Find a channel's longest video</h3><p class="mono">YouTube can't sort a channel by length. Search the whole channel, longest first.</p><span class="go">Read <svg class="arr" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
         <a class="card card-link" href="../youtube-search-filters/"><p class="eyebrow eyebrow-grey"><span>Search filters</span></p><h3>Filter search by views and exact length</h3><p class="mono">The filters YouTube's Filters button doesn't have, typed into the search bar.</p><span class="go">Read <svg class="arr" viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M3 8h9M8.5 4.5 12 8l-3.5 3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
