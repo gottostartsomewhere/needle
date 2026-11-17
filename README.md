@@ -25,6 +25,7 @@ a Chrome extension that searches the parts of YouTube that have no search box.
 - [Filter YouTube search by view count and exact length](https://gottostartsomewhere.github.io/needle/youtube-search-filters/)
 - [How to exclude a channel or a word from YouTube search](https://gottostartsomewhere.github.io/needle/exclude-channel-youtube-search/)
 - [How to search your liked videos on YouTube](https://gottostartsomewhere.github.io/needle/search-liked-videos-youtube/)
+- [How to sort YouTube liked videos oldest first](https://gottostartsomewhere.github.io/needle/youtube-liked-videos-oldest-first/)
 
 Questions or something not working: [open an issue](https://github.com/gottostartsomewhere/needle/issues).
 Privacy policy: https://gottostartsomewhere.github.io/needle/privacy/
