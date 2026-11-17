@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>How to export a YouTube playlist: links, CSV and NotebookLM</title>
-<meta name="description" content="YouTube has no export button. Copy every link in a playlist, download it as a CSV, or send it to NotebookLM, for any playlist, Watch Later and Liked included.">
+<title>Export a YouTube playlist to Excel, CSV or a list of links</title>
+<meta name="description" content="YouTube has no export button. Get any playlist, Watch Later or Liked videos into Excel, Google Sheets or a plain list of links, with titles, lengths and views.">
 <link rel="canonical" href="https://gottostartsomewhere.github.io/needle/export-youtube-playlist/">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Needle for YouTube">
-<meta property="og:title" content="How to export a YouTube playlist: links, CSV and NotebookLM">
-<meta property="og:description" content="YouTube has no export button. Copy every link in a playlist, download it as a CSV, or send it to NotebookLM, for any playlist, Watch Later and Liked included.">
+<meta property="og:title" content="Export a YouTube playlist to Excel, CSV or a list of links">
+<meta property="og:description" content="YouTube has no export button. Get any playlist, Watch Later or Liked videos into Excel, Google Sheets or a plain list of links, with titles, lengths and views.">
 <meta property="og:url" content="https://gottostartsomewhere.github.io/needle/export-youtube-playlist/">
 <meta property="og:image" content="https://gottostartsomewhere.github.io/needle/img/og.jpg">
 <meta property="og:image:width" content="1200">
@@ -23,7 +23,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap">
 <link rel="stylesheet" href="../style.css">
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"How to export a YouTube playlist","description":"YouTube has no export button. Copy every link in a playlist, download it as a CSV, or send it to NotebookLM, for any playlist, Watch Later and Liked included.","dateModified":"2026-11-16","datePublished":"2026-11-05","image":"https://gottostartsomewhere.github.io/needle/img/og.jpg","mainEntityOfPage":"https://gottostartsomewhere.github.io/needle/export-youtube-playlist/","publisher":{"@type":"Organization","name":"Needle for YouTube","logo":{"@type":"ImageObject","url":"https://gottostartsomewhere.github.io/needle/icon128.png"}}},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can I export someone else's playlist?","acceptedAnswer":{"@type":"Answer","text":"Yes. Any playlist you can open: public ones, and unlisted ones you have the link to."}},{"@type":"Question","name":"Can I export my Watch Later or Liked videos?","acceptedAnswer":{"@type":"Answer","text":"Yes, signed in. Needle reads the first 100 of your own lists, the same as the page does. Press Read all in the panel to export the rest."}},{"@type":"Question","name":"How many videos can it export?","acceptedAnswer":{"@type":"Answer","text":"As many as it reads: up to the Video limit in Needle's settings, 1,800 by default and up to 10,000."}},{"@type":"Question","name":"Does Google Takeout include the video titles?","acceptedAnswer":{"@type":"Answer","text":"No. Takeout's playlist files list each video's ID and when it was added, with no titles, and only for playlists you made yourself."}},{"@type":"Question","name":"Does my playlist get uploaded anywhere?","acceptedAnswer":{"@type":"Answer","text":"No. Needle has no server. The links and files are made in your browser, from what YouTube's own page already loads."}}]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Needle","item":"https://gottostartsomewhere.github.io/needle/"},{"@type":"ListItem","position":2,"name":"Export a playlist","item":"https://gottostartsomewhere.github.io/needle/export-youtube-playlist/"}]}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"How to export a YouTube playlist to Excel or CSV","description":"YouTube has no export button. Get any playlist, Watch Later or Liked videos into Excel, Google Sheets or a plain list of links, with titles, lengths and views.","dateModified":"2026-11-17","datePublished":"2026-11-05","image":"https://gottostartsomewhere.github.io/needle/img/og.jpg","mainEntityOfPage":"https://gottostartsomewhere.github.io/needle/export-youtube-playlist/","publisher":{"@type":"Organization","name":"Needle for YouTube","logo":{"@type":"ImageObject","url":"https://gottostartsomewhere.github.io/needle/icon128.png"}}},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I export a YouTube playlist to Excel?","acceptedAnswer":{"@type":"Answer","text":"Open the playlist, open Needle's panel, then Export and Download CSV. In Excel, bring it in with Data, then From Text/CSV, rather than double-clicking it, so titles with accents, other alphabets or emoji come through. YouTube itself has no way to do it."}},{"@type":"Question","name":"Why do some titles look garbled in Excel?","acceptedAnswer":{"@type":"Answer","text":"Double-clicked, Excel reads a CSV in your computer's older regional encoding unless the file is marked as UTF-8, and Needle's isn't marked. Open it with Data, From Text/CSV and set File origin to 65001: Unicode (UTF-8), or import it into Google Sheets, which reads it correctly."}},{"@type":"Question","name":"How do I copy all the links in a YouTube playlist?","acceptedAnswer":{"@type":"Answer","text":"Export, then Copy links. Every video's link, one per line, ready for a text file, a spreadsheet column or Gemini Notebook."}},{"@type":"Question","name":"Can I export a playlist to a text file?","acceptedAnswer":{"@type":"Answer","text":"Yes. Copy links, or Copy titles and links, then paste into Notepad or any text editor and save it. Download JSON is there too, for code."}},{"@type":"Question","name":"Can I export someone else's playlist?","acceptedAnswer":{"@type":"Answer","text":"Yes. Any playlist you can open: public ones, and unlisted ones you have the link to."}},{"@type":"Question","name":"Can I export my Watch Later or Liked videos?","acceptedAnswer":{"@type":"Answer","text":"Yes, signed in. Needle reads the first 100 of your own lists, the same as the page does. Press Read all in the panel to export the rest."}},{"@type":"Question","name":"How many videos can it export?","acceptedAnswer":{"@type":"Answer","text":"As many as it reads: up to the Video limit in Needle's settings, 1,800 by default and up to 10,000."}},{"@type":"Question","name":"Does Google Takeout include the video titles?","acceptedAnswer":{"@type":"Answer","text":"No. Takeout's playlist files have two columns, the video ID and when it was added, with no titles, and only for playlists you made yourself."}},{"@type":"Question","name":"Does my playlist get uploaded anywhere?","acceptedAnswer":{"@type":"Answer","text":"No. Needle has no server. The links and files are made in your browser, from what YouTube's own page already loads."}},{"@type":"Question","name":"Is it free?","acceptedAnswer":{"@type":"Answer","text":"Yes. No account, no trial, no paid tier."}}]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Needle","item":"https://gottostartsomewhere.github.io/needle/"},{"@type":"ListItem","position":2,"name":"Export a playlist to Excel or CSV","item":"https://gottostartsomewhere.github.io/needle/export-youtube-playlist/"}]}]}</script>
 </head>
 <body>
 <header class="top">
@@ -40,11 +40,11 @@
   <section class="band band-article">
     <article class="article">
       <p class="eyebrow"><span>Guide 12</span><i>·</i>Playlists</p>
-      <h1>How to export a YouTube playlist<span class="red">.</span></h1>
-      <p class="mono small">Updated 16 November 2026</p>
+      <h1>How to export a YouTube playlist to Excel or CSV<span class="red">.</span></h1>
+      <p class="mono small">Updated 17 November 2026</p>
       <section class="answer" aria-label="Short answer">
         <p class="eyebrow"><span>Short answer</span></p>
-        <p>YouTube has no way to export a playlist. Google Takeout gives you your own playlists, but only as video IDs with no titles. <a href="https://chromewebstore.google.com/detail/needle-for-youtube-channe/magofcbhfhpfabphcldhodhgehhclokc?utm_source=needle-site&utm_medium=web&utm_campaign=export-youtube-playlist">Needle</a> reads the whole playlist, yours or anyone's, and its <strong>Export</strong> menu copies every link (one per line, ready for NotebookLM), copies titles with links or a Markdown list, or downloads a CSV or JSON file, filtered and sorted however you like.</p>
+        <p>YouTube has no way to export a playlist, and Google Takeout only gives video IDs for playlists you made. <a href="https://chromewebstore.google.com/detail/needle-for-youtube-channe/magofcbhfhpfabphcldhodhgehhclokc?utm_source=needle-site&utm_medium=web&utm_campaign=export-youtube-playlist">Needle</a> reads the whole playlist, yours or anyone's, and its <strong>Export</strong> menu downloads it as a CSV for Excel or Google Sheets, with each video's title, link, length and views. It also copies every link, one per line, or the titles with their links.</p>
       </section>
       
 <p class="eyebrow"><span>01</span><i>·</i>On YouTube</p>
@@ -58,51 +58,65 @@
   <li>Tick <em>YouTube and YouTube Music</em>, then <em>All YouTube data included</em>, and leave only <em>playlists</em> ticked.</li>
   <li>Export, and wait for the email.</li>
 </ol>
-<p>Each playlist arrives as a CSV of video IDs and the time each one was added. No titles, no channels, no lengths, and nothing for playlists other people made. It's a backup, not a list you can read.</p>
+<p>Each playlist arrives as its own CSV with two columns: the video ID and when it was added. No titles, no channels, no lengths, and nothing for playlists other people made. It's a backup, not a list you can read.</p>
 
 <p class="eyebrow"><span>03</span><i>·</i>With Needle</p>
 <h2 id="needle">Export it with Needle</h2>
 <ol class="steps">
   <li>Open the playlist, or your Watch Later or Liked videos.</li>
   <li>Press the needle button in the bottom right corner, or <kbd>Alt</kbd>+<kbd>Y</kbd>.</li>
-  <li>Needle reads every video in it.</li>
-  <li>Open <strong>Export</strong> and pick what you need.</li>
+  <li>Needle reads every video in it, not just the 100 on the page.</li>
+  <li>Open <strong>Export</strong> and pick <strong>Download CSV</strong> for a spreadsheet, or one of the copy options.</li>
 </ol>
+<figure><img src="../img/export.webp" width="928" height="470" alt="Needle's panel on Crash Course's Astronomy playlist with the Export menu open: copy links, copy titles and links, Markdown, a link to this filter, CSV and JSON" loading="lazy" decoding="async"><figcaption>Crash Course Astronomy: 48 videos, almost nine hours, and every way out of the panel.</figcaption></figure>
 
-<p class="eyebrow"><span>04</span><i>·</i>What you get</p>
-<h2 id="formats">What each one gives you</h2>
+<p class="eyebrow"><span>04</span><i>·</i>excel</p>
+<h2 id="excel">Open it in Excel or Google Sheets</h2>
+<p><strong>Excel.</strong> Double-clicking the file works for plain English titles. For anything else, import it, so accents, other alphabets and emoji don't turn into junk:</p>
+<ol class="steps">
+  <li>In Excel, go to <em>Data</em>, then <em>From Text/CSV</em>, and pick the file.</li>
+  <li>Set <em>File origin</em> to <em>65001: Unicode (UTF-8)</em>.</li>
+  <li>Press <em>Load</em>.</li>
+</ol>
+<p><strong>Google Sheets.</strong> <em>File</em>, then <em>Import</em>, then <em>Upload</em>, and choose the file. It reads it as it is.</p>
+<p>A first thing to try: in Excel, <code class="op">=SUM(D:D)/3600</code> adds up the length column into hours. For the Crash Course playlist above it gives 8.96, the same nine hours the panel shows.</p>
+
+<p class="eyebrow"><span>05</span><i>·</i>columns</p>
+<h2 id="columns">What's in the file</h2>
+<p>One row per video, in the order the panel is showing, with these columns:</p>
+<table class="ops"><tbody><tr><td><code class="op">title</code></td><td>The video's title</td></tr><tr><td><code class="op">videoId</code></td><td>The 11-character ID, the part after v= in a link</td></tr><tr><td><code class="op">url</code></td><td>A short link to the video, like https://youtu.be/0rHUDWjR5gg</td></tr><tr><td><code class="op">durationSeconds</code></td><td>Length in seconds, for adding up and sorting</td></tr><tr><td><code class="op">duration</code></td><td>Length the way YouTube shows it, like 12:12</td></tr><tr><td><code class="op">views</code></td><td>Views as a number. Where YouTube shows a rounded count like 5.7M, it's 5700000</td></tr><tr><td><code class="op">published</code></td><td>How long ago it went up, in YouTube's words, like 11y ago</td></tr><tr><td><code class="op">approxDaysAgo</code></td><td>The same in days, to sort by upload date</td></tr><tr><td><code class="op">viewsPerDay</code></td><td>Views divided by those days</td></tr><tr><td><code class="op">watchedOn</code></td><td>From your history only: the day you watched it, with watchedDaysAgo beside it</td></tr></tbody></table>
+
+<p class="eyebrow"><span>06</span><i>·</i>copy</p>
+<h2 id="copy">Copy instead of download</h2>
 <ul class="list">
-  <li><strong>Copy links, for NotebookLM.</strong> Every video's link, one per line, and nothing else.</li>
+  <li><strong>Copy links, for NotebookLM.</strong> Every video's link, one per line, and nothing else. Paste it into a text file or a single spreadsheet column.</li>
   <li><strong>Copy titles and links.</strong> Each title with its channel and length, and the link under it. Good for a message or an email.</li>
   <li><strong>Copy as a Markdown list.</strong> One line per video as a link, for notes apps like Obsidian or Notion.</li>
-  <li><strong>Download CSV.</strong> A spreadsheet: title, video ID, link, length, views, how long ago it went up, and views per day. Exported from your history, it adds when you watched each one.</li>
   <li><strong>Download JSON.</strong> Everything Needle read about each video, for code.</li>
 </ul>
 
-<p class="eyebrow"><span>05</span><i>·</i>NotebookLM</p>
-<h2 id="notebooklm">Into NotebookLM, now Gemini Notebook</h2>
-<p>Google renamed NotebookLM to Gemini Notebook in July 2026. It takes YouTube videos as sources and works from their captions, so it can only use public videos that have them. A free notebook holds 50 sources, which is why it pays to filter before you copy.</p>
-<ol class="steps">
-  <li>Cut the playlist down to the videos that matter, with the filters below.</li>
-  <li>Open <strong>Export</strong> and choose <strong>Copy links, for NotebookLM</strong>.</li>
-  <li>In Gemini Notebook, select <em>Add sources</em>, choose to add a link, and paste.</li>
-</ol>
-<p>A whole channel rarely fits. <a href="../youtube-channel-to-notebooklm/">Adding a YouTube channel to Gemini Notebook</a> covers the limit on each plan and which videos it can read.</p>
+<p class="eyebrow"><span>07</span><i>·</i>NotebookLM</p>
+<h2 id="notebooklm">Into Gemini Notebook</h2>
+<p>Google renamed NotebookLM to Gemini Notebook in July 2026. It takes YouTube links as sources and works from their captions, and a free notebook holds 50 sources, so filter first, then <strong>Copy links, for NotebookLM</strong>, and paste them in under <em>Add sources</em>. <a href="../youtube-channel-to-notebooklm/">Adding a YouTube channel to Gemini Notebook</a> covers the limit on each plan and which videos it can read.</p>
 
-<p class="eyebrow"><span>06</span><i>·</i>Filters</p>
+<p class="eyebrow"><span>08</span><i>·</i>Filters</p>
 <h2 id="filters">Export only what you need</h2>
 <p>Export takes what's showing, in the order it's showing, so set the sort menu first (Most views, Shortest, Oldest first) and filter in the panel's box:</p>
 <table class="ops"><tbody><tr><td><code class="op">&gt;10m</code></td><td>Only proper videos, no clips</td></tr><tr><td><code class="op">&gt;100k</code></td><td>Only the ones with over 100K views</td></tr><tr><td><code class="op">unwatched</code></td><td>Only what you haven't started</td></tr><tr><td><code class="op">@name</code></td><td>Only one channel's videos</td></tr></tbody></table>
 <p>On your own playlists, Watch Later and Liked videos you can hand-pick instead: press <strong>Select</strong> and click the videos you want, and the copy options take just those.</p>
-<p>Looking for one video first? <a href="../search-youtube-playlist/">Search inside the playlist</a>.</p>
-<p>Exporting a whole channel works the same way: open the panel on the channel. <a href="../search-youtube-channel/">Searching a channel with Needle</a> covers that.</p>
-      <p class="eyebrow"><span>07</span><i>·</i>Questions</p>
+<p>Want to know how long it all is before you export? <a href="../youtube-playlist-length/">Add up a playlist's length</a>. Looking for one video first? <a href="../search-youtube-playlist/">Search inside the playlist</a>. A whole channel exports the same way, from the panel on the channel: <a href="../search-youtube-channel/">searching a channel with Needle</a> covers that.</p>
+      <p class="eyebrow"><span>09</span><i>·</i>Questions</p>
       <h2 id="faq">Questions<span class="red">?</span></h2>
-      <div class="faq"><div class="qa"><h3>Can I export someone else's playlist?</h3><p>Yes. Any playlist you can open: public ones, and unlisted ones you have the link to.</p></div>
+      <div class="faq"><div class="qa"><h3>How do I export a YouTube playlist to Excel?</h3><p>Open the playlist, open Needle's panel, then Export and Download CSV. In Excel, bring it in with Data, then From Text/CSV, rather than double-clicking it, so titles with accents, other alphabets or emoji come through. YouTube itself has no way to do it.</p></div>
+<div class="qa"><h3>Why do some titles look garbled in Excel?</h3><p>Double-clicked, Excel reads a CSV in your computer's older regional encoding unless the file is marked as UTF-8, and Needle's isn't marked. Open it with Data, From Text/CSV and set File origin to 65001: Unicode (UTF-8), or import it into Google Sheets, which reads it correctly.</p></div>
+<div class="qa"><h3>How do I copy all the links in a YouTube playlist?</h3><p>Export, then Copy links. Every video's link, one per line, ready for a text file, a spreadsheet column or Gemini Notebook.</p></div>
+<div class="qa"><h3>Can I export a playlist to a text file?</h3><p>Yes. Copy links, or Copy titles and links, then paste into Notepad or any text editor and save it. Download JSON is there too, for code.</p></div>
+<div class="qa"><h3>Can I export someone else's playlist?</h3><p>Yes. Any playlist you can open: public ones, and unlisted ones you have the link to.</p></div>
 <div class="qa"><h3>Can I export my Watch Later or Liked videos?</h3><p>Yes, signed in. Needle reads the first 100 of your own lists, the same as the page does. Press Read all in the panel to export the rest.</p></div>
 <div class="qa"><h3>How many videos can it export?</h3><p>As many as it reads: up to the Video limit in Needle's settings, 1,800 by default and up to 10,000.</p></div>
-<div class="qa"><h3>Does Google Takeout include the video titles?</h3><p>No. Takeout's playlist files list each video's ID and when it was added, with no titles, and only for playlists you made yourself.</p></div>
-<div class="qa"><h3>Does my playlist get uploaded anywhere?</h3><p>No. Needle has no server. The links and files are made in your browser, from what YouTube's own page already loads.</p></div></div>
+<div class="qa"><h3>Does Google Takeout include the video titles?</h3><p>No. Takeout's playlist files have two columns, the video ID and when it was added, with no titles, and only for playlists you made yourself.</p></div>
+<div class="qa"><h3>Does my playlist get uploaded anywhere?</h3><p>No. Needle has no server. The links and files are made in your browser, from what YouTube's own page already loads.</p></div>
+<div class="qa"><h3>Is it free?</h3><p>Yes. No account, no trial, no paid tier.</p></div></div>
     </article>
   </section>
   
