@@ -7,6 +7,7 @@ a Chrome extension that searches the parts of YouTube that have no search box.
 ## The guides
 
 - [Search your YouTube watch history by channel, length or date](https://gottostartsomewhere.github.io/needle/search-watch-history/)
+- [How to find a YouTube video you watched long ago](https://gottostartsomewhere.github.io/needle/find-youtube-video-you-watched/)
 - [How to sort YouTube search by upload date again](https://gottostartsomewhere.github.io/needle/sort-youtube-search-by-upload-date/)
 - [How to search your YouTube Watch Later list](https://gottostartsomewhere.github.io/needle/search-watch-later/)
 - [Block a YouTube channel everywhere, search included](https://gottostartsomewhere.github.io/needle/block-youtube-channel/)
