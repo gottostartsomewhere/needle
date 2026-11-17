@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Filter YouTube search by view count and exact length</title>
-<meta name="description" content="YouTube's Filters menu has three length buckets and no view count filter. How to filter search results by exact length, view count and what you haven't watched.">
+<meta name="description" content="YouTube dropped sort by view count in 2026 and its length filter has three buckets. What Popularity really does, and how to filter by exact views and length.">
 <link rel="canonical" href="https://gottostartsomewhere.github.io/needle/youtube-search-filters/">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Needle for YouTube">
 <meta property="og:title" content="Filter YouTube search by view count and exact length">
-<meta property="og:description" content="YouTube's Filters menu has three length buckets and no view count filter. How to filter search results by exact length, view count and what you haven't watched.">
+<meta property="og:description" content="YouTube dropped sort by view count in 2026 and its length filter has three buckets. What Popularity really does, and how to filter by exact views and length.">
 <meta property="og:url" content="https://gottostartsomewhere.github.io/needle/youtube-search-filters/">
 <meta property="og:image" content="https://gottostartsomewhere.github.io/needle/img/og.jpg">
 <meta property="og:image:width" content="1200">
@@ -23,7 +23,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap">
 <link rel="stylesheet" href="../style.css">
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"How to filter YouTube search by views and exact length","description":"YouTube's Filters menu has three length buckets and no view count filter. How to filter search results by exact length, view count and what you haven't watched.","dateModified":"2026-11-16","datePublished":"2026-09-30","image":"https://gottostartsomewhere.github.io/needle/img/og.jpg","mainEntityOfPage":"https://gottostartsomewhere.github.io/needle/youtube-search-filters/","publisher":{"@type":"Organization","name":"Needle for YouTube","logo":{"@type":"ImageObject","url":"https://gottostartsomewhere.github.io/needle/icon128.png"}}},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Did YouTube remove sort by view count?","acceptedAnswer":{"@type":"Answer","text":"Yes. The old view count sort became Popularity, which weighs things like watch time as well as views. In Needle, >100k filters by the actual view count, and sort:views sorts by it."}},{"@type":"Question","name":"Does YouTube see my filters?","acceptedAnswer":{"@type":"Answer","text":"Only the ones it has itself, like upload date. Needle takes the rest out of the query before YouTube sees it, so <12m never turns into a search for “<12m”."}},{"@type":"Question","name":"Does it work on my phone?","acceptedAnswer":{"@type":"Answer","text":"No. Needle is for YouTube in a desktop browser: Chrome, or another browser that installs extensions from the Chrome Web Store."}},{"@type":"Question","name":"Is it free?","acceptedAnswer":{"@type":"Answer","text":"Yes. No account, no trial, no paid tier."}}]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Needle","item":"https://gottostartsomewhere.github.io/needle/"},{"@type":"ListItem","position":2,"name":"Filter search by views and exact length","item":"https://gottostartsomewhere.github.io/needle/youtube-search-filters/"}]}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Article","headline":"How to filter YouTube search by views and exact length","description":"YouTube dropped sort by view count in 2026 and its length filter has three buckets. What Popularity really does, and how to filter by exact views and length.","dateModified":"2026-11-17","datePublished":"2026-09-30","image":"https://gottostartsomewhere.github.io/needle/img/og.jpg","mainEntityOfPage":"https://gottostartsomewhere.github.io/needle/youtube-search-filters/","publisher":{"@type":"Organization","name":"Needle for YouTube","logo":{"@type":"ImageObject","url":"https://gottostartsomewhere.github.io/needle/icon128.png"}}},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Did YouTube remove sort by view count?","acceptedAnswer":{"@type":"Answer","text":"Yes, in January 2026. The Sort by menu became Prioritize, and View count became Popularity, which YouTube says weighs view count along with signals like watch time. Upload date and Rating went as sorts altogether. In Needle, sort:views orders results by the real view count."}},{"@type":"Question","name":"Is Popularity the same as sorting by views?","acceptedAnswer":{"@type":"Answer","text":"Close, not the same. It sends YouTube the same setting the old View count sort did, and results come out mostly most-viewed first, with some out of place. Checked on 17 November 2026: on iphone 17 review, the most viewed video came fourth."}},{"@type":"Question","name":"Can YouTube hide videos under a certain number of views?","acceptedAnswer":{"@type":"Answer","text":"No. Neither the Filters menu nor the search bar has a minimum or maximum view count. In Needle, >100k shows only videos over 100,000 views, and <5k only small ones."}},{"@type":"Question","name":"How do I filter YouTube videos by exact length?","acceptedAnswer":{"@type":"Answer","text":"YouTube's Duration filter has three settings: under 3 minutes, 3 to 20 minutes and over 20 minutes. Nothing finer. In Needle you type the length you want: <12m, >45m, <1.5h or >90s. A number on its own is minutes."}},{"@type":"Question","name":"Does >1m mean a minute or a million views?","acceptedAnswer":{"@type":"Answer","text":"A minute. Length is what people filter on most, so m on its own is minutes. Add the word views for millions: >1m views. A number ending in k or b always means views."}},{"@type":"Question","name":"Why are YouTube's search filters not working?","acceptedAnswer":{"@type":"Answer","text":"Usually because they changed, not because they broke. Since January 2026, Upload date only narrows results to a period and leaves them in YouTube's order, so a week-old video can sit above one from today. Popularity isn't strictly by views. And the address trick for newest first, adding &sp=CAI%253D, no longer does anything: checked on 17 November 2026, the results come back in the usual order."}},{"@type":"Question","name":"Do the filters stay on for my next search?","acceptedAnswer":{"@type":"Answer","text":"YouTube's don't. A new search from the search bar starts without them, so Popularity or a Duration has to be picked again each time. Filters typed with Needle are part of the search itself, so there's nothing to set again: they go wherever the words go."}},{"@type":"Question","name":"Can I leave Shorts out of search?","acceptedAnswer":{"@type":"Answer","text":"Yes. Since January 2026, Filters then Type: Videos leaves Shorts out. Needle's Hide Shorts button keeps them out of search, Home and Subscriptions until you turn it off."}},{"@type":"Question","name":"Does YouTube see my filters?","acceptedAnswer":{"@type":"Answer","text":"Only the ones it has itself, like date:week or is:4k, which go to YouTube as its own filters. Needle takes the rest out before the search is sent, so <12m never turns into a search for “<12m”."}},{"@type":"Question","name":"Does it work on my phone?","acceptedAnswer":{"@type":"Answer","text":"No. Needle is for YouTube in a desktop browser: Chrome, or another browser that installs extensions from the Chrome Web Store."}},{"@type":"Question","name":"Is it free?","acceptedAnswer":{"@type":"Answer","text":"Yes. No account, no trial, no paid tier."}}]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Needle","item":"https://gottostartsomewhere.github.io/needle/"},{"@type":"ListItem","position":2,"name":"Filter search by views and exact length","item":"https://gottostartsomewhere.github.io/needle/youtube-search-filters/"}]}]}</script>
 </head>
 <body>
 <header class="top">
@@ -41,52 +41,84 @@
     <article class="article">
       <p class="eyebrow"><span>Guide 16</span><i>·</i>Search filters</p>
       <h1>How to filter YouTube search by views and exact length<span class="red">.</span></h1>
-      <p class="mono small">Updated 16 November 2026</p>
+      <p class="mono small">Updated 17 November 2026</p>
       <section class="answer" aria-label="Short answer">
         <p class="eyebrow"><span>Short answer</span></p>
-        <p>YouTube's Filters button offers three length buckets (under 3 minutes, 3 to 20, over 20), an upload date, and a Popularity sort. There's no view count filter and no exact length. With <a href="https://chromewebstore.google.com/detail/needle-for-youtube-channe/magofcbhfhpfabphcldhodhgehhclokc?utm_source=needle-site&utm_medium=web&utm_campaign=youtube-search-filters">Needle</a>, a free Chrome extension, you type them into the search bar instead: <code class="op">&lt;12m</code>, <code class="op">&gt;100k</code>, <code class="op">unwatched</code>.</p>
+        <p>YouTube's search has no view count filter and no exact length. Since January 2026 there isn't even a view count sort: <strong>Prioritize: Popularity</strong> is the closest, and it puts results mostly, not strictly, in order of views. Length comes in three buckets: under 3 minutes, 3 to 20, over 20. <a href="https://chromewebstore.google.com/detail/needle-for-youtube-channe/magofcbhfhpfabphcldhodhgehhclokc?utm_source=needle-site&utm_medium=web&utm_campaign=youtube-search-filters">Needle</a>, a free Chrome extension, lets you type both into the search bar instead: <code class="op">python tutorial &lt;30m &gt;100k</code>.</p>
       </section>
       
 <p class="eyebrow"><span>01</span><i>·</i>On YouTube</p>
-<h2 id="youtube">What YouTube's Filters menu can do</h2>
-<p>Search for something, then click <em>Filters</em> above the results. You get:</p>
+<h2 id="youtube">What YouTube's Filters menu has now</h2>
+<p>Search for something, then click <em>Filters</em> at the top right of the results. This is the whole menu, as it was on 17 November 2026:</p>
+<figure><img src="../img/yt-search-filters.webp" width="696" height="520" alt="YouTube's Search filters dialog with five groups: Type, Duration, Upload date, Features and Prioritize" loading="lazy" decoding="async"><figcaption>Five groups. Prioritize has two options left, and none of them is a view count.</figcaption></figure>
 <ul class="list">
-  <li><strong>Upload date:</strong> today, this week, this month, this year.</li>
-  <li><strong>Type:</strong> videos, channels, playlists and a few more.</li>
+  <li><strong>Type:</strong> videos, Shorts, channels, playlists, movies. <em>Videos</em> leaves Shorts out.</li>
   <li><strong>Duration:</strong> under 3 minutes, 3 to 20 minutes, over 20 minutes.</li>
-  <li><strong>Features:</strong> live, 4K, HD, subtitles, Creative Commons, 360, VR180, 3D, HDR.</li>
+  <li><strong>Upload date:</strong> today, this week, this month, this year.</li>
+  <li><strong>Features:</strong> live, 4K, HD, subtitles, Creative Commons, 360°, VR180, 3D, HDR, location, purchased.</li>
   <li><strong>Prioritize:</strong> relevance or popularity.</li>
 </ul>
-<p>YouTube has also started showing Watched and Unwatched chips on some results pages. What it took away, in January 2026, is sorting by upload date: <a href="../sort-youtube-search-by-upload-date/">how to get that back</a>.</p>
+<p>There's also a row of chips above the results, like <em>Unwatched</em> and <em>Recently uploaded</em>.</p>
+<p>It used to have more. In January 2026 YouTube renamed <em>Sort by</em> to <em>Prioritize</em>, turned <em>View count</em> into <em>Popularity</em>, and dropped <em>Upload date</em> and <em>Rating</em> as sorts, along with the <em>Last hour</em> filter, saying they weren't working as expected. <a href="../sort-youtube-search-by-upload-date/">How to sort by upload date again</a>.</p>
 
 <p class="eyebrow"><span>02</span><i>·</i>The gap</p>
 <h2 id="missing">What it can't do</h2>
 <ul class="list">
-  <li><strong>View counts.</strong> Popularity isn't view count, and there's no way to say "only videos over 100K views".</li>
-  <li><strong>Exact lengths.</strong> Three buckets, that's it. A 10 minute limit isn't possible.</li>
-  <li><strong>Leaving a channel out.</strong> If one creator floods every search, you can't mute them. YouTube's minus sign <a href="../exclude-channel-youtube-search/">does the opposite for a channel</a>.</li>
+  <li><strong>A view count limit.</strong> Nothing hides videos under 10,000 views, or over a million.</li>
+  <li><strong>A strict view count sort.</strong> Popularity comes close, and close is all it promises.</li>
+  <li><strong>Exact lengths.</strong> Three buckets. Under 10 minutes, or between 20 and 40, isn't possible.</li>
+  <li><strong>Leaving a channel out.</strong> If one creator fills every search, there's no way to mute them there. YouTube's minus sign <a href="../exclude-channel-youtube-search/">does the opposite for a channel</a>.</li>
 </ul>
 
-<p class="eyebrow"><span>03</span><i>·</i>With Needle</p>
+<p class="eyebrow"><span>03</span><i>·</i>popularity</p>
+<h2 id="popularity">The closest without an extension: Popularity</h2>
+<ol class="steps">
+  <li>Search as usual.</li>
+  <li>Click <em>Filters</em>, then <strong>Popularity</strong> under Prioritize.</li>
+  <li>For length, open <em>Filters</em> again and add the Duration that's nearest to what you want.</li>
+</ol>
+<p>Popularity sends YouTube the same setting the old View count sort did, and the order comes out close to most viewed first. Close is the word. Three searches on 17 November 2026:</p>
+<ul class="list">
+  <li><em>sourdough bread</em>: 16.4M, 9.2M, 4.2M, 3.5M, then 10.6M views. The fifth video had more than the two above it.</li>
+  <li><em>iphone 17 review</em>: the most viewed video, at 16.9M, came fourth.</li>
+  <li><em>python tutorial</em>: eleventh was a 39M-view video about an egg inside a snake. Views count for so much that big videos sharing one word get in.</li>
+</ul>
+<p>It also only sorts. There's no "over 100K views", so the small videos are still there further down, and the next search starts without it, so you pick it again every time.</p>
+
+<p class="eyebrow"><span>04</span><i>·</i>With Needle</p>
 <h2 id="needle">Type your filters with Needle</h2>
-<p>Needle lets you write filters straight into YouTube's search bar. Press Enter and anything YouTube can do itself, like <code class="op">date:week</code> or <code class="op">is:4k</code>, goes to YouTube as its own filter. The rest, like exact lengths and view counts, is applied to the results in Needle's panel. When a strict filter leaves too few, <em>Load more</em> keeps reading further down YouTube's results.</p>
-<figure><img src="../img/filters.webp" width="1406" height="620" alt="Needle's panel on a YouTube search for C++, filtered to over 20 minutes and over 100K views, 130 of 207 results" loading="lazy" decoding="async"><figcaption>C++ tutorials over 20 minutes with more than 100K views: 130 of the first 207 results.</figcaption></figure>
+<ol class="steps">
+  <li>Type your search into YouTube's own search bar with the filters after it, like <code class="op">python tutorial &lt;30m &gt;100k</code>.</li>
+  <li>Press <kbd>Enter</kbd>.</li>
+  <li>Needle reads the first 200 or so results and opens its panel on them, your filters shown as chips you can take off one at a time.</li>
+  <li>When a strict filter leaves too few, <em>Load more</em> at the bottom reads further down YouTube's results.</li>
+</ol>
+<figure><img src="../img/filters.webp" width="880" height="470" alt="Needle's panel on a YouTube search for python tutorial, filtered to under 30 minutes and over 100K views, 80 of 203 results" loading="lazy" decoding="async"><figcaption>Under 30 minutes and over 100K views: 80 of the first 203 results for python tutorial.</figcaption></figure>
+<p>Whatever YouTube can do itself is sent to YouTube as its own filter, so its whole catalogue is narrowed before Needle sees a thing: <code class="op">date:week</code>, <code class="op">is:4k</code>, <code class="op">sort:views</code> as Popularity, and a length that fits inside one of its buckets (<code class="op">&gt;25m</code> goes as <em>Over 20 minutes</em>). Needle then applies the exact numbers and, for <code class="op">sort:views</code>, puts what's left in true view count order.</p>
 
 <h3>Every filter</h3>
-<table class="ops"><tbody><tr><td><code class="op">&lt;20m</code></td><td>Shorter than 20 minutes (also >45m, <1h, >90s)</td></tr><tr><td><code class="op">&gt;100k</code></td><td>More than 100K views (also <5k, >1m views)</td></tr><tr><td><code class="op">unwatched</code></td><td>Never started (is:started for half watched, is:watched for done)</td></tr><tr><td><code class="op">is:fresh</code></td><td>Nothing you were shown in an earlier search</td></tr><tr><td><code class="op">date:week</code></td><td>Uploaded this week (also today, month, year)</td></tr><tr><td><code class="op">after:2023</code></td><td>Uploaded after 2023 (before: works too, with a year, month or day)</td></tr><tr><td><code class="op">@name</code></td><td>Only from that channel</td></tr><tr><td><code class="op">-@name</code></td><td>Never from that channel</td></tr><tr><td><code class="op">-word</code></td><td>Leave out anything mentioning it</td></tr><tr><td><code class="op">sort:views</code></td><td>Most viewed first (also newest, oldest, longest, shortest)</td></tr><tr><td><code class="op">lang:en</code></td><td>Titles in English</td></tr><tr><td><code class="op">is:4k</code></td><td>YouTube's own feature filters: also is:live, is:hd, has:subtitles, is:creative-commons</td></tr></tbody></table>
+<table class="ops"><tbody><tr><td><code class="op">&lt;20m</code></td><td>Shorter than 20 minutes (also >45m, <1.5h, >90s; a number on its own is minutes)</td></tr><tr><td><code class="op">&gt;100k</code></td><td>More than 100K views (also <5k, and >1m views for a million)</td></tr><tr><td><code class="op">unwatched</code></td><td>Never started (is:started for half watched, is:watched for done)</td></tr><tr><td><code class="op">is:fresh</code></td><td>Nothing you were shown in an earlier search</td></tr><tr><td><code class="op">date:week</code></td><td>Uploaded this week (also today, month, year)</td></tr><tr><td><code class="op">after:2023</code></td><td>Uploaded after 2023 (before: works too, with a year, month or day)</td></tr><tr><td><code class="op">@name</code></td><td>Only from that channel</td></tr><tr><td><code class="op">-@name</code></td><td>Never from that channel</td></tr><tr><td><code class="op">-word</code></td><td>Leave out anything mentioning it</td></tr><tr><td><code class="op">sort:views</code></td><td>Most viewed first, by the real count (also newest, oldest, longest, shortest)</td></tr><tr><td><code class="op">lang:en</code></td><td>Titles in English</td></tr><tr><td><code class="op">is:4k</code></td><td>YouTube's own feature filters: also is:live, is:hd, has:subtitles, is:creative-commons</td></tr><tr><td><code class="op">is:short</code></td><td>Shorts only (is:movie for movies)</td></tr></tbody></table>
 
 <h3>Try these</h3>
 <ul class="list">
   <li><code class="op">python tutorial &lt;30m &gt;100k</code> proper tutorials that aren't three hours long.</li>
+  <li><code class="op">documentary &gt;45m &gt;1m views sort:views</code> feature-length documentaries over a million views, the biggest first.</li>
   <li><code class="op">lofi is:fresh</code> only results you haven't already scrolled past.</li>
   <li><code class="op">phone review -@mkbhd</code> for when one channel fills the whole page.</li>
   <li><code class="op">recipe date:month unwatched</code> new this month, and not something you've seen.</li>
 </ul>
-<p>The same filters search the lists YouTube keeps for you. Start with <code class="op">in:history</code>, <code class="op">in:wl</code> or <code class="op">in:liked</code>: <a href="../search-watch-history/">searching your watch history</a> shows how.</p>
-      <p class="eyebrow"><span>04</span><i>·</i>Questions</p>
+<p>Shorts in the way? Type: Videos keeps them out of one search, and <a href="../hide-shorts-youtube/">Needle's Hide Shorts</a> keeps them out of all of them. The same filters also search the lists YouTube keeps for you: start with <code class="op">in:history</code>, <code class="op">in:wl</code> or <code class="op">in:liked</code>, and <a href="../search-watch-history/">searching your watch history</a> shows how.</p>
+      <p class="eyebrow"><span>05</span><i>·</i>Questions</p>
       <h2 id="faq">Questions<span class="red">?</span></h2>
-      <div class="faq"><div class="qa"><h3>Did YouTube remove sort by view count?</h3><p>Yes. The old view count sort became Popularity, which weighs things like watch time as well as views. In Needle, &gt;100k filters by the actual view count, and sort:views sorts by it.</p></div>
-<div class="qa"><h3>Does YouTube see my filters?</h3><p>Only the ones it has itself, like upload date. Needle takes the rest out of the query before YouTube sees it, so &lt;12m never turns into a search for “&lt;12m”.</p></div>
+      <div class="faq"><div class="qa"><h3>Did YouTube remove sort by view count?</h3><p>Yes, in January 2026. The Sort by menu became Prioritize, and View count became Popularity, which YouTube says weighs view count along with signals like watch time. Upload date and Rating went as sorts altogether. In Needle, sort:views orders results by the real view count.</p></div>
+<div class="qa"><h3>Is Popularity the same as sorting by views?</h3><p>Close, not the same. It sends YouTube the same setting the old View count sort did, and results come out mostly most-viewed first, with some out of place. Checked on 17 November 2026: on iphone 17 review, the most viewed video came fourth.</p></div>
+<div class="qa"><h3>Can YouTube hide videos under a certain number of views?</h3><p>No. Neither the Filters menu nor the search bar has a minimum or maximum view count. In Needle, &gt;100k shows only videos over 100,000 views, and &lt;5k only small ones.</p></div>
+<div class="qa"><h3>How do I filter YouTube videos by exact length?</h3><p>YouTube's Duration filter has three settings: under 3 minutes, 3 to 20 minutes and over 20 minutes. Nothing finer. In Needle you type the length you want: &lt;12m, &gt;45m, &lt;1.5h or &gt;90s. A number on its own is minutes.</p></div>
+<div class="qa"><h3>Does &gt;1m mean a minute or a million views?</h3><p>A minute. Length is what people filter on most, so m on its own is minutes. Add the word views for millions: &gt;1m views. A number ending in k or b always means views.</p></div>
+<div class="qa"><h3>Why are YouTube's search filters not working?</h3><p>Usually because they changed, not because they broke. Since January 2026, Upload date only narrows results to a period and leaves them in YouTube's order, so a week-old video can sit above one from today. Popularity isn't strictly by views. And the address trick for newest first, adding &amp;sp=CAI%253D, no longer does anything: checked on 17 November 2026, the results come back in the usual order.</p></div>
+<div class="qa"><h3>Do the filters stay on for my next search?</h3><p>YouTube's don't. A new search from the search bar starts without them, so Popularity or a Duration has to be picked again each time. Filters typed with Needle are part of the search itself, so there's nothing to set again: they go wherever the words go.</p></div>
+<div class="qa"><h3>Can I leave Shorts out of search?</h3><p>Yes. Since January 2026, Filters then Type: Videos leaves Shorts out. Needle's Hide Shorts button keeps them out of search, Home and Subscriptions until you turn it off.</p></div>
+<div class="qa"><h3>Does YouTube see my filters?</h3><p>Only the ones it has itself, like date:week or is:4k, which go to YouTube as its own filters. Needle takes the rest out before the search is sent, so &lt;12m never turns into a search for “&lt;12m”.</p></div>
 <div class="qa"><h3>Does it work on my phone?</h3><p>No. Needle is for YouTube in a desktop browser: Chrome, or another browser that installs extensions from the Chrome Web Store.</p></div>
 <div class="qa"><h3>Is it free?</h3><p>Yes. No account, no trial, no paid tier.</p></div></div>
     </article>
