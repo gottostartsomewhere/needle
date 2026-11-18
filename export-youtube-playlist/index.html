@@ -70,7 +70,7 @@
 </ol>
 <figure><img src="../img/export.webp" width="928" height="470" alt="Needle's panel on Crash Course's Astronomy playlist with the Export menu open: copy links, copy titles and links, Markdown, a link to this filter, CSV and JSON" loading="lazy" decoding="async"><figcaption>Crash Course Astronomy: 48 videos, almost nine hours, and every way out of the panel.</figcaption></figure>
 
-<p class="eyebrow"><span>04</span><i>·</i>excel</p>
+<p class="eyebrow"><span>04</span><i>·</i>In Excel</p>
 <h2 id="excel">Open it in Excel or Google Sheets</h2>
 <p><strong>Excel.</strong> Double-clicking the file works for plain English titles. For anything else, import it, so accents, other alphabets and emoji don't turn into junk:</p>
 <ol class="steps">
@@ -81,12 +81,12 @@
 <p><strong>Google Sheets.</strong> <em>File</em>, then <em>Import</em>, then <em>Upload</em>, and choose the file. It reads it as it is.</p>
 <p>A first thing to try: in Excel, <code class="op">=SUM(D:D)/3600</code> adds up the length column into hours. For the Crash Course playlist above it gives 8.96, the same nine hours the panel shows.</p>
 
-<p class="eyebrow"><span>05</span><i>·</i>columns</p>
+<p class="eyebrow"><span>05</span><i>·</i>The columns</p>
 <h2 id="columns">What's in the file</h2>
 <p>One row per video, in the order the panel is showing, with these columns:</p>
 <table class="ops"><tbody><tr><td><code class="op">title</code></td><td>The video's title</td></tr><tr><td><code class="op">videoId</code></td><td>The 11-character ID, the part after v= in a link</td></tr><tr><td><code class="op">url</code></td><td>A short link to the video, like https://youtu.be/0rHUDWjR5gg</td></tr><tr><td><code class="op">durationSeconds</code></td><td>Length in seconds, for adding up and sorting</td></tr><tr><td><code class="op">duration</code></td><td>Length the way YouTube shows it, like 12:12</td></tr><tr><td><code class="op">views</code></td><td>Views as a number. Where YouTube shows a rounded count like 5.7M, it's 5700000</td></tr><tr><td><code class="op">published</code></td><td>How long ago it went up, in YouTube's words, like 11y ago</td></tr><tr><td><code class="op">approxDaysAgo</code></td><td>The same in days, to sort by upload date</td></tr><tr><td><code class="op">viewsPerDay</code></td><td>Views divided by those days</td></tr><tr><td><code class="op">watchedOn</code></td><td>From your history only: the day you watched it, with watchedDaysAgo beside it</td></tr></tbody></table>
 
-<p class="eyebrow"><span>06</span><i>·</i>copy</p>
+<p class="eyebrow"><span>06</span><i>·</i>Copying</p>
 <h2 id="copy">Copy instead of download</h2>
 <ul class="list">
   <li><strong>Copy links, for NotebookLM.</strong> Every video's link, one per line, and nothing else. Paste it into a text file or a single spreadsheet column.</li>
